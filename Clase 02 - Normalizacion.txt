@@ -1,0 +1,32 @@
+NORMALIZACION DE BASE DE DATOS 
+
+Relacion de uno a uno 
+	Solo un registro de la tabla A puede relacionarse
+	con un registro de la tabla B.
+	Y viceversa.
+
+Relacion de uno a mucho
+	Un registro de la tabla A puede relacioanrse con
+	varios registros de la tabla B pero solo un registro
+	de la tabla B puede relacionarse con un reg. de la
+	tabla A
+
+Relacion de muchos a muchos
+	Muchos registros de la tabla A pueden relacionarse
+	con varios registros de la tabla B y muchos registros
+	de la tabla B puede relacionarse con varios registro
+	de la tabla A 
+
+1FN -> Creamos tablas diferentes para las propiedades 
+		que se generen conflictos por llevar más de un
+		atributo o que pueda repetirse
+1FN -> todas las propiedades si todos los dominios
+		subyacentes tienen atributos atomicos 
+
+2FN -> PK compuesta 
+		tiene que estar en 1FN y los atributos no clave
+		dependan por completo de la PK
+
+3FN -> si está en 2FN 
+		todos los atributos no clave dependen de manera
+		no transitiva de la PK 
